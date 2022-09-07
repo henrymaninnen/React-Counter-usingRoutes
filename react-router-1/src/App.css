@@ -17,17 +17,20 @@ h1{
   display: flex;
   justify-content: center;
 }
-.buttonDiv{
+.buttonDiv, .secondButtonDiv{
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  width: 11%;
+  width: 20%;
   margin: 0 auto;
 }
-.buttonDiv button{
+div button{
   padding: 4px 24px;
   background-color: black;
   color: white;
   font-size: 48px;
+}
+.secondButtonDiv{
+  margin-top: 20px;
 }

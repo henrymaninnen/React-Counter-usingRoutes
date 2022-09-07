@@ -9,16 +9,19 @@ import CurrentCount from "./pages/CurrentCount"
 
 function App() {
   const [count, setCount] = useState(0)
+  let changeCount = (value) =>{
+    setCount(count + value)
+  }
   return (
     <div className="App">
       <header className="App-header">
         <Routes>
-          <Route path="/counter" element={<Counter count={count} setCount={setCount} />}/>
+          <Route path="/counter" element={<Counter count={count} setCount={setCount} changeCount={changeCount}/>}/>
           <Route path="/currentcount" element={<CurrentCount count={count}/>}/>
         </Routes>
       </header>
     </div>
-  );
+  ); 
 }
 
 export default App;

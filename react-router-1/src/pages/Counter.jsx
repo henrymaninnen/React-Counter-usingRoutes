@@ -8,13 +8,17 @@ function Counter(props) {
    <div className="buttonDiv">
     <button onClick={() => {
         props.setCount(props.count + 1)
-    }}>+</button>
+    }}>+1</button>
    <button onClick={() => {
         props.setCount(props.count - 1)
-    }}>-</button>
+    }}>-1</button>
+    </div>
+    <div className="secondButtonDiv">
+      <button onClick={() => props.changeCount(2)}>+2</button>
+      <button onClick={() => props.changeCount(-2)}>-2</button>
     </div>
     </>
-  )
+  ) 
 }
 
 export default Counter
